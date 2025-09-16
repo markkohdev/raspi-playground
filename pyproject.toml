@@ -6,4 +6,14 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "gpiozero>=2.0.1",
+    "ipython>=9.5.0",
+    "ncnn>=1.0.20250916",
+    "picamzero>=1.0.2",
+    "ultralytics>=8.3.191",
 ]
+
+# [tool.uv]
+# no-install-packages = ["tensorflow-decision-forests"]
+# required-environments = [
+#     "sys_platform == 'linux' and platform_machine == 'manylinux_2_36_aarch64'"
+# ]

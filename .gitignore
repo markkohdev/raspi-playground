@@ -1,3 +1,9 @@
+# Dotfiles
+.*
+# Dotfile exceptions
+!.gitignore
+!.vscode
+
 # Python-generated files
 __pycache__/
 *.py[oc]

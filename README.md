@@ -4,8 +4,22 @@ This repository contains a collection of Python experiments and projects designe
 
 ## Setup
 
+First install the necessary apt packages:
+```bash
+sudo apt update
+sudo apt install -y libcap-dev libatlas-base-dev ffmpeg libopenjp2-7 libcamera-dev libkms++-dev libfmt-dev libdrm-dev
+```
+
 To set up the repository and manage dependencies, use [`uv`](https://github.com/astral-sh/uv):
 ```bash
-uv venv
+uv venv --python 3.11 --prompt raspi-playground --system-site-packages .venv
 uv sync
 ```
+
+## Running programs
+We'll even use `uv` to run the programs, so that they use the virtual environment:
+```bash
+uv run src/main/raspi_playground/basics/stoplight.py
+```
+
+

@@ -1,10 +1,18 @@
-from gpiozero import LED, Button, Buzzer, TrafficLights
+from gpiozero import Button, Buzzer, TrafficLights
 from time import sleep
-from signal import pause
 
-# red = LED(5)
-# yellow = LED(6)
-# green = LED(13)
+"""
+Pinout:
+    - Red: GPIO 5
+    - Yellow: GPIO 6
+    - Green: GPIO 13
+    - Buzzer: GPIO 17
+    - Button: GPIO 27
+
+Lights: GPIO -> resistor -> led -> ground
+Buzzer: GPIO -> buzzer -> ground
+Button: GPIO -> button -> ground
+"""
 lights = TrafficLights(5, 6, 13)
 
 buzzer = Buzzer(17)

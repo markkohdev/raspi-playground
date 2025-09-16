@@ -6,11 +6,12 @@
     "configurations": [
         {
             "name": "Python Debugger: Current File",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "sudo": true
+            "sudo": true,
+            "justMyCode": false
         }
     ]
 }
