@@ -22,4 +22,19 @@ We'll even use `uv` to run the programs, so that they use the virtual environmen
 uv run src/main/raspi_playground/basics/stoplight.py
 ```
 
+## Running Interactively
+You can also run Python interactively with the virtual environment:
+```bash
+❯ uv run ipython
+Python 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 9.5.0 -- An enhanced Interactive Python. Type '?' for help.
+Tip: Put a ';' at the end of a line to suppress the printing of output.
+
+In [1]: from gpiozero import LED
+
+In [2]: led = LED(2)
+
+In [3]: led.on()
+```
 

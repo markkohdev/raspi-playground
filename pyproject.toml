@@ -5,10 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "adafruit-circuitpython-pca9685>=3.4.19",
+    "adafruit-circuitpython-servokit>=1.3.21",
     "gpiozero>=2.0.1",
+    "ipdb>=0.13.13",
     "ipython>=9.5.0",
     "ncnn>=1.0.20250916",
     "picamzero>=1.0.2",
+    "sshkeyboard>=2.3.1",
     "ultralytics>=8.3.191",
 ]
 

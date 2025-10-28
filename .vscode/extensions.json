@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "esbenp.prettier-vscode",
+        // Deprecated, but still the only working x11 forwarding extension
+        "spadin.remote-x11"
+    ]
+}

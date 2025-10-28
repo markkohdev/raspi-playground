@@ -1,4 +1,9 @@
-# From https://core-electronics.com.au/guides/raspberry-pi/getting-started-with-yolo-object-and-animal-recognition-on-the-raspberry-pi/
+"""
+This script uses a pan-tilt servo mount with the picamera to follow a cat (or an object of your choice).
+
+The pan-tilt mount is controlled by two SG90 servos connected to a PCA9685 board.
+The camera feed uses YOLO to detect the cat and adjust the pan and tilt angles accordingly.
+"""
 from dataclasses import dataclass
 from typing import List, Optional
 import cv2
@@ -56,7 +61,7 @@ class DetectionClass:
 #             self.buzzer.off()
 
 
-class CatBuzzerRunner:
+class CatFollowerRunner:
 
     IDLE_LED_COLOR = Color("green")
     DEFAULT_CLASSES = [
@@ -213,5 +218,5 @@ class CatBuzzerRunner:
 
 
 if __name__ == "__main__":
-    runner = CatBuzzerRunner(show_preview=True)
+    runner = CatFollowerRunner(show_preview=True)
     runner.main()
